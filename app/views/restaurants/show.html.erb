@@ -1,0 +1,13 @@
+<h2 class="text-center view_title"><%=@restaurant.name%></h3>
+
+<p class="text-center">
+  <%=link_to 'Reviews', restaurant_reviews_path(@restaurant.id), class: "btn btn-primary"%>
+  <%=link_to 'Add review', new_restaurant_review_path(@restaurant.id), class: "btn btn-primary"%>
+</p>
+
+
+<div class="restaurant_box">
+  <p>Address: <%=@restaurant.address%></p>
+  <p>Phone: <%=@restaurant.phone_number%></p>
+  <p>Category: <%=@restaurant.category%></p>
+</div>

@@ -14,3 +14,14 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require bootstrap-sprockets
+
+
+$( document ).ready(function() {
+  var r_item = $('.restaurant_item');
+  r_item.on('click', function(){
+    // $(this:).addClass("fly-right")
+    // $("<p>word</p>").insertAfter(this)
+  })
+
+});

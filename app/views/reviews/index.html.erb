@@ -1,0 +1,18 @@
+<h2 class="text-center view_title">Reviews</h2>
+
+<p class="text-center">
+  <%=link_to 'Return to restaurant', restaurant_path(@restaurant.id), class: "btn btn-primary"%>
+  <%=link_to 'Return to List', restaurants_path, class: "btn btn-primary"%>
+</p>
+
+
+
+<ul class="list-group">
+  <h2>Reviews for: <%=@restaurant.name%></h2>
+  <% @reviews.each do |review|%>
+    <li class="list-group-item">
+      <h3>Rating: <%= review.rating%>/5</h3>
+      <p>Review: <%= review.content%></p>
+    </li>
+  <%end%>
+</ul>
